@@ -1,3 +1,5 @@
-# Hyperledger Composer Samples
+---
+permalink: /
+---
 
-Just testing
+All the best samples coming soon

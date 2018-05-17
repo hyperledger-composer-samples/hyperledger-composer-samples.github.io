@@ -1,0 +1,10 @@
+# Mac OS X files
+.DS_Store
+*.swp
+
+# Jekyll files
+Gemfile.lock
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata

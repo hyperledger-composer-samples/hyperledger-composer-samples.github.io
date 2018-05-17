@@ -1,0 +1,31 @@
+---
+layout: default
+permalink: /index.html
+---
+
+<main class="home" id="samples">
+  <div id="sample-grid" class="row flex-grid">
+  {% for sample in site.samples %}
+    <article class="box-item sample-{{sample.category}}">
+      <span class="ribbon">
+        <span>{{sample.category}}</span>
+      </span>
+      <div class="box-body">
+        <a class="sample-link" href="{{ sample.url | prepend: site.baseurl }}">
+          <h2 class="sample-title">
+            {{ sample.title }}
+          </h2>
+        </a>
+        <a class="sample-link" href="{{ sample.url | prepend: site.baseurl }}">
+          <p class="description">{{ sample.description }}</p>
+        </a>
+        <div class="repos">
+          {% for repo in sample.repos %}
+            <a href="{{ repo.link }}">{{ repo.type }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+  </div>
+</main>
